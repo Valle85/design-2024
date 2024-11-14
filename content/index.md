@@ -6,9 +6,9 @@ Description: This is our index page.
 Home page
 ==========================
 
-The source for this page is in `content/index.md`.
+<!--The source for this page is in `content/index.md`.-->
 
-### Lite om mig
+### Lite om mig själv
 
 <img src="%assets_url%/img/me.jpg" alt="me" style="width: 200px;">
 

@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $header-color;
+  color: $font-alternative-color;
+}
+
+.header a {
+  color: $font-color;
+}
+
+.site-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav a {
+  font-size: 1rem;
+  color: $font-color;
+}
+
+.tagline {
+  color: $font-color;
+}
+
+.logo img {
+    width: 300px !important;
+    height: auto !important;
+    }
+    
