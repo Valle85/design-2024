@@ -1,0 +1,22 @@
+---
+Title: Teknologier
+Description: This is our tech page.
+Template: technologies
+techs:
+    - name: Css
+      class: css
+    - name: HTML
+      class: html
+    - name: Javascript
+      class: javascript
+    - name: PHP
+      class: php
+    - name: Python
+      class: python
+    - name: GIT
+      class: git
+    - name: SQLITE
+      class: sqlite
+---
+Technologies
+==========================

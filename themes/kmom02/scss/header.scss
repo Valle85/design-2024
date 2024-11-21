@@ -1,7 +1,8 @@
 .header {
+  width: auto;
   display: flex;
   flex-direction: row;
-  padding: 2rem;
+  padding: 1.5rem 1rem;
   justify-content: space-between;
   align-items: center;
   background-color: $header-color;
@@ -20,8 +21,9 @@
 }
 
 .nav a {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: $font-color;
+  padding: 0.5rem;
 }
 
 .tagline {
@@ -29,7 +31,29 @@
 }
 
 .logo img {
-    width: 300px !important;
-    height: auto !important;
-    }
-    
+  width: 100% !important;
+  max-width: 300px !important;
+  height: auto !important;
+  width: auto !important;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+  }
+
+  .site-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo img {
+    max-width: 200px;
+  }
+
+  .nav a {
+    font-size: 1rem;
+  }
+}
