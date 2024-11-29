@@ -66,10 +66,18 @@
 .menu {
   width: 30%;
   background-color: #f0f0f0;
+  color: $font-color;
   padding: 1.5rem;
   border: 2px solid #ccc;
   text-align: center;
   border-radius: 10px;
+}
+
+.menu-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -78,8 +86,7 @@
   }
 
   .menu {
-    grid-column: span 1;
-    margin-bottom: 1rem;
+    display: none;
   }
 
   .article {

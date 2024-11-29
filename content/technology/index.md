@@ -1,5 +1,5 @@
 ---
-Title: Teknologier
+Title: Technologies
 Description: This is our tech page.
 Template: technologies
 techs:
