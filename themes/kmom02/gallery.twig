@@ -1,0 +1,41 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    <div class="main" role="main">
+        {{ content }}
+
+        <div class="gallery-grid">
+            {% set images = [
+                "bikd1.jpg",
+                "bild2.jpg",
+                "bild3.jpg",
+                "bild4.jpg",
+                "bild5.jpg",
+                "bild6.jpg",
+            ] %}
+
+            {% for image in images %}
+                <a href="{{ base_url }}/image/{{ image }}" target="_blank">
+                    <img 
+                        class="gallery-img"
+                        src="{{ base_url }}/image/{{ image }}?w=200&q=60"
+                        srcset="
+                            {{ base_url }}/image/{{ image }}?w=200&q=60 200w,
+                            {{ base_url }}/image/{{ image }}?w=400&q=75 400w"
+                            sizes="(max-width: 768px) 200px, 400px"
+                            alt="Gallery Image" />
+                </a>
+            {% endfor %}
+        </div>
+
+        <!-- YouTube-video -->
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/C-u5WLJ9Yk4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    
+    {% include 'incl/footer.twig' %}
+</body>
+</html>
