@@ -18,18 +18,13 @@ body {
   flex: 1 0 auto;
   color: $font-color;
   background-color: $main-background-color;
-  max-width: 64rem;
-  padding: 1rem;
-  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  max-width: 800px;
+  margin: 2rem auto;
 }
 
-@media (max-width: 768px) {
-  .main {
-    max-width: 100%;
-    padding: 1rem;
-    margin: 0 1rem;
-  }
-}
 
 .hidden {
   display: none !important;

@@ -22,17 +22,16 @@
                         class="gallery-img"
                         src="{{ base_url }}/image/{{ image }}?w=200&q=60"
                         srcset="
-                            {{ base_url }}/image/{{ image }}?w=200&q=60 200w,
-                            {{ base_url }}/image/{{ image }}?w=400&q=75 400w"
-                            sizes="(max-width: 768px) 200px, 400px"
-                            alt="Gallery Image" />
+                            {{ base_url }}/image/{{ image }}?w=200&q=60 1x,
+                            {{ base_url }}/image/{{ image }}?w=400&q=75 2x"
+                        alt="Gallery Image" />
                 </a>
             {% endfor %}
         </div>
 
         <!-- YouTube-video -->
         <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/C-u5WLJ9Yk4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/C-u5WLJ9Yk4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen, title="YouTube-video Britney></iframe>
         </div>
     </div>
     

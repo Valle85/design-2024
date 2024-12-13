@@ -8,7 +8,7 @@
             {{content}}
 
         {% for tech in meta.techs %}
-            <a class="a" href="{{ base_url }}/technology/{{tech.class}}">
+            <a class="a" href="{{ base_url }}/technology/{{tech.class}}" aria-label="Läs mer om {{tech.name}}">
             <div class="box {{tech.class}}">
                 <h1>{{tech.name}}</h1>
             </div>

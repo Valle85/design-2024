@@ -1,6 +1,7 @@
 ---
 Title: About
 Description: Page about my 
+Template: about
 ---
 
 About
